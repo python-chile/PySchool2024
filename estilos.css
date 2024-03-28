@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   /*  overflow: hidden;  Evita el scroll */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white; /* Para la frase, si quieres que sea de color blanco */
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.logotipo {
+    max-width: 50%; /* Ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción del logotipo */
+}
+
+
+.frase {
+    margin-top: 20px; /* Espacio entre el logotipo y la frase */
+    font-style: italic; /* Cursiva para la cita */
+    color: #CCCCCC; /* Un color claro para la cita, ajusta según tu diseño */
+    font-size: 1.5em;
+}
+
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0; /* Espacio por arriba y por abajo */
+}
+
+.footer a {
+    color: #0a7aff; /* Color del enlace */
+    text-decoration: none; /* No subrayado */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
