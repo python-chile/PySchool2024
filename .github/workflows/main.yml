@@ -16,6 +16,6 @@ jobs:
           password: ${{ secrets.PYSCHOOL_PASS }}
           port: ${{ secrets.PYSCHOOL_PORT }}
           script: |
-            pwd
+            cd /home/pyschool
             ls -l
             sh deploy.sh
