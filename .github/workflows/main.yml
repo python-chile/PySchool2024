@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  deploy-prod:
+    if: github.ref == 'refs/heads/main'
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Push to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.PYSCHOOL_SERVER }}
+          username: ${{ secrets.PYSCHOOL_USER }}
+          password: ${{ secrets.PYSCHOOL_PASS }}
+          port: ${{ secrets.PYSCHOOL_PORT }}
+          script: |
+            pwd
+            ls -l
+            sh deploy.sh
