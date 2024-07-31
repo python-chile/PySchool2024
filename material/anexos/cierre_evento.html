@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>🐍 PySchool - Python en Ciencia de Datos</title>
+<title>🐍 PySchool - Cierre PySchool</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../material/anexos/cierre_evento.html" rel="next">
-<link href="../../material/talleres/taller_2.html" rel="prev">
+<link href="../../material/anexos/aprendizaje.html" rel="next">
+<link href="../../material/talleres/taller_3.html" rel="prev">
 <link href="../../images/pc.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -231,7 +231,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"import pandas as pd\npd.set_option('display.max_columns', None)\n\n# Cargar el conjunto de datos de Pokémon\nurl = 'https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6/raw/92200bc0a673d5ce2110aaad4544ed6c4010f687/pokemon.csv'\npokemon_data = pd.read_csv(url)\n\n# Mostrar las primeras filas del conjunto de datos\npokemon_data.head()"},{"id":2,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"# Mostrar la descripción estadística del conjunto de datos\npokemon_data.describe()"},{"id":3,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"import matplotlib.pyplot as plt\n\n# Contar la cantidad de Pokémon por tipo\npokemon_por_tipo = pokemon_data['Type 1'].value_counts()\n\n# Crear un gráfico de barras\nplt.figure(figsize=(11, 6))\npokemon_por_tipo.plot(kind='bar', color='#66c2a5')\nplt.title('Cantidad de Pokémon por Tipo', fontsize=14)\nplt.xlabel('Tipo', fontsize=12)\nplt.ylabel('Cantidad', fontsize=12)\nplt.xticks(rotation=45)\nplt.grid(axis='y', linestyle='--', alpha=0.7)\nplt.show()"},{"id":4,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"# Calcular el promedio de estadísticas por tipo\npromedio_estadisticas = pokemon_data.groupby('Type 1')[['HP', 'Attack', 'Defense', 'Speed']].mean()\n\n# Crear un gráfico de barras apiladas\ncolors = ['#fc8d62', '#66c2a5', '#8da0cb', '#e78ac3']\npromedio_estadisticas.plot(kind='bar', stacked=True, figsize=(11, 6), color=colors)\nplt.title('Promedio de Estadísticas por Tipo de Pokémon', fontsize=14)\nplt.xlabel('Tipo', fontsize=12)\nplt.ylabel('Promedio de Estadísticas', fontsize=12)\nplt.legend(title='Estadísticas', loc='upper left')\nplt.grid(axis='y', linestyle='--', alpha=0.7)\nplt.show()"},{"id":5,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"# Crear un gráfico de dispersión de ataque vs defensa\nplt.figure(figsize=(11, 6))\nplt.scatter(pokemon_data['Attack'], pokemon_data['Defense'], color='#8da0cb', alpha=0.7, edgecolor='k', linewidth=0.5)\nplt.title('Ataque vs Defensa de Pokémon', fontsize=14)\nplt.xlabel('Ataque', fontsize=12)\nplt.ylabel('Defensa', fontsize=12)\nplt.grid(True, linestyle='--', alpha=0.7)\nplt.show()"},{"id":6,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"import numpy as np\n\n# Agregar columnas de peso y altura simuladas\npokemon_data['Weight'] = np.random.uniform(5, 150, len(pokemon_data))  # Peso en kg\npokemon_data['Height'] = np.random.uniform(0.3, 2.5, len(pokemon_data))  # Altura en m\n\n# Crear un gráfico de dispersión de peso vs altura\nplt.figure(figsize=(11, 6))\nplt.scatter(pokemon_data['Weight'], pokemon_data['Height'], color='#66c2a5', alpha=0.7, edgecolor='k', linewidth=0.5)\nplt.title('Peso vs Altura de Pokémon', fontsize=14)\nplt.xlabel('Peso (kg)', fontsize=12)\nplt.ylabel('Altura (m)', fontsize=12)\nplt.grid(True, linestyle='--', alpha=0.7)\nplt.show()"},{"id":7,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"# Obtener los 10 Pokémon con mayor ataque\ntop_ataque = pokemon_data.nlargest(10, 'Attack')[['Name', 'Type 1', 'Attack', 'Defense', 'HP']]\n\n# Mostrar la tabla\ntop_ataque"},{"id":8,"options":{"out-width":"700px","dpi":72,"comment":"","context":"interactive","classes":"","output":"true","fig-width":7,"warning":"true","message":"true","label":"","results":"markup","autorun":"","read-only":"false","fig-height":5,"fig-cap":"","out-height":""},"code":"# Obtener los 10 Pokémon con mayor defensa\ntop_defensa = pokemon_data.nlargest(10, 'Defense')[['Name', 'Type 1', 'Defense', 'Attack', 'HP']]\n\n# Mostrar la tabla\ntop_defensa"}];
+globalThis.qpyodideCellDetails = [{"id":1,"code":"from random import randint\n\nnumero_participantes = 2\nnumero_premiado = randint(1, numero_participantes)\n\nprint(f\"El estudiante premiado es: {numero_premiado}\")","options":{"read-only":"false","message":"true","out-height":"","comment":"","context":"interactive","fig-height":5,"results":"markup","fig-cap":"","warning":"true","autorun":"","out-width":"700px","classes":"","label":"","fig-width":7,"dpi":72,"output":"true"}}];
 
 
 </script>
@@ -422,6 +422,35 @@ globalThis._qpyodideGetInstance = function() {
 
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -434,7 +463,7 @@ globalThis._qpyodideGetInstance = function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../material/talleres/intro.html">🚀 Talleres</a></li><li class="breadcrumb-item"><a href="../../material/talleres/taller_3.html"><span class="chapter-title">Python en Ciencia de Datos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../material/anexos/cierre_evento.html">📜 Anexos</a></li><li class="breadcrumb-item"><a href="../../material/anexos/cierre_evento.html"><span class="chapter-title">Cierre PySchool</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -493,7 +522,7 @@ globalThis._qpyodideGetInstance = function() {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../material/talleres/taller_3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Python en Ciencia de Datos</span></a>
+  <a href="../../material/talleres/taller_3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python en Ciencia de Datos</span></a>
   </div>
 </li>
       </ul>
@@ -509,7 +538,7 @@ globalThis._qpyodideGetInstance = function() {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../material/anexos/cierre_evento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cierre PySchool</span></a>
+  <a href="../../material/anexos/cierre_evento.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cierre PySchool</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -553,9 +582,9 @@ globalThis._qpyodideGetInstance = function() {
   });
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../material/talleres/intro.html">🚀 Talleres</a></li><li class="breadcrumb-item"><a href="../../material/talleres/taller_3.html"><span class="chapter-title">Python en Ciencia de Datos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../material/anexos/cierre_evento.html">📜 Anexos</a></li><li class="breadcrumb-item"><a href="../../material/anexos/cierre_evento.html"><span class="chapter-title">Cierre PySchool</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Python en Ciencia de Datos</span></h1>
+<h1 class="title"><span class="chapter-title">Cierre PySchool</span></h1>
 </div>
 
 
@@ -572,223 +601,34 @@ globalThis._qpyodideGetInstance = function() {
 </header>
 
 
-<p>🎯 <strong>Objetivos del capítulo</strong></p>
-<ul>
-<li>Explorar y analizar un conjunto de datos de Pokémon utilizando Python.</li>
-<li>Aprender técnicas básicas de exploración y visualización de datos.</li>
-<li>Comprender cómo aplicar análisis de datos para obtener información relevante.</li>
-<li>Desarrollar habilidades prácticas para visualizar datos de manera efectiva.</li>
-</ul>
-<section id="exploración-y-visualización-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="exploración-y-visualización-de-datos">📊 Exploración y Visualización de Datos</h2>
-<p>Primero, importemos las bibliotecas necesarias y carguemos el conjunto de datos de Pokémon. Este ejercicio es excelente para practicar la manipulación de datos y la visualización con las bibliotecas <code>pandas</code> y <code>matplotlib</code>.</p>
-<section id="cargar-el-conjunto-de-datos" class="level3">
-<h3 class="anchored" data-anchor-id="cargar-el-conjunto-de-datos">Cargar el Conjunto de Datos</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es cargar un conjunto de datos de Pokémon desde una URL y mostrar las primeras filas para obtener una vista previa de los datos.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Importar bibliotecas</strong>: Usar <code>pandas</code> para manipulación de datos.</li>
-<li><strong>Cargar datos</strong>: Leer el conjunto de datos desde una URL.</li>
-<li><strong>Mostrar datos</strong>: Mostrar las primeras filas del conjunto de datos.</li>
-</ol>
+<section id="retroalimentación" class="level3">
+<h3 class="anchored" data-anchor-id="retroalimentación">🎯 <strong>Retroalimentación</strong></h3>
+<p>Nos encantaría saber que te ha parecido PySchool, y que podemos mejorar. Agradeceríamos contestaras la siguiente encuesta:</p>
+<center>
+<a href="https://forms.gle/MjQFihE1RiKzVgid9" target="_blank" rel="noopener noreferrer"> <img src="../../images/qr_retroalimentacion.png" width="400">
+<p>
+https://forms.gle/MjQFihE1RiKzVgid9
+</p>
+</a>
+</center>
+</section>
+<section id="código-para-sorteo" class="level3">
+<h3 class="anchored" data-anchor-id="código-para-sorteo">Código para sorteo</h3>
+<p>Para sortear algunos premios utilizaremos, por supuesto, un código de python. Usaremos la función <code>random.randint(a, b)</code> que retorna un número entero aleatorio <span class="math inline">\(N\)</span> que cumpla la condición <span class="math inline">\(a &lt;= N &lt;= b\)</span>.</p>
 <div id="qpyodide-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="descripción-del-conjunto-de-datos" class="level3">
-<h3 class="anchored" data-anchor-id="descripción-del-conjunto-de-datos">Descripción del Conjunto de Datos</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es obtener una visión general de las estadísticas del conjunto de datos para comprender mejor la distribución de los valores.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Descripción estadística</strong>: Usar <code>describe</code> para obtener estadísticas básicas del conjunto de datos.</li>
-</ol>
-<div id="qpyodide-insertion-location-2"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-</section>
-<section id="análisis-y-visualización-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="análisis-y-visualización-de-datos">📈 Análisis y Visualización de Datos</h2>
-<section id="tipos-de-pokémon" class="level3">
-<h3 class="anchored" data-anchor-id="tipos-de-pokémon">Tipos de Pokémon</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es contar cuántos Pokémon de cada tipo hay en el conjunto de datos y visualizar estos datos en un gráfico de barras.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Contar Pokémon por tipo</strong>: Usar <code>value_counts</code> para contar los Pokémon por tipo.</li>
-<li><strong>Crear gráfico de barras</strong>: Usar <code>matplotlib</code> para visualizar la cantidad de Pokémon por tipo.</li>
-</ol>
-<div id="qpyodide-insertion-location-3"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="promedio-de-estadísticas-por-tipo" class="level3">
-<h3 class="anchored" data-anchor-id="promedio-de-estadísticas-por-tipo">Promedio de Estadísticas por Tipo</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es calcular y visualizar el promedio de las estadísticas principales de los Pokémon agrupados por tipo en un gráfico de barras apiladas.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Calcular promedios</strong>: Usar <code>groupby</code> y <code>mean</code> para calcular el promedio de estadísticas por tipo.</li>
-<li><strong>Gráfico de barras apiladas</strong>: Usar <code>plot</code> para visualizar los promedios.</li>
-</ol>
-<div id="qpyodide-insertion-location-4"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="estadísticas-de-ataque-y-defensa" class="level3">
-<h3 class="anchored" data-anchor-id="estadísticas-de-ataque-y-defensa">Estadísticas de Ataque y Defensa</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es comparar las estadísticas de ataque y defensa de los Pokémon en un gráfico de dispersión.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Gráfico de dispersión</strong>: Usar <code>scatter</code> para visualizar la relación entre ataque y defensa.</li>
-</ol>
-<div id="qpyodide-insertion-location-5"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="peso-y-altura-de-los-pokémon" class="level3">
-<h3 class="anchored" data-anchor-id="peso-y-altura-de-los-pokémon">Peso y Altura de los Pokémon</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es explorar la relación entre el peso y la altura de los Pokémon utilizando estadísticas simuladas.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Simular datos</strong>: Crear columnas de peso y altura simuladas.</li>
-<li><strong>Gráfico de dispersión</strong>: Usar <code>scatter</code> para visualizar la relación entre peso y altura.</li>
-</ol>
-<div id="qpyodide-insertion-location-6"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-</section>
-<section id="tablas-y-gráficos-interactivos" class="level2">
-<h2 class="anchored" data-anchor-id="tablas-y-gráficos-interactivos">📊 Tablas y Gráficos Interactivos</h2>
-<section id="tabla-de-pokémon-con-mayor-ataque" class="level3">
-<h3 class="anchored" data-anchor-id="tabla-de-pokémon-con-mayor-ataque">Tabla de Pokémon con Mayor Ataque</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es mostrar los 10 Pokémon con la mayor estadística de ataque.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Top 10 en ataque</strong>: Usar <code>nlargest</code> para obtener los Pokémon con mayor ataque.</li>
-<li><strong>Mostrar tabla</strong>: Mostrar una tabla con los resultados.</li>
-</ol>
-<div id="qpyodide-insertion-location-7"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</section>
-<section id="tabla-de-pokémon-con-mayor-defensa" class="level3">
-<h3 class="anchored" data-anchor-id="tabla-de-pokémon-con-mayor-defensa">Tabla de Pokémon con Mayor Defensa</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Desafío:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Desafío:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>El objetivo de este ejercicio es mostrar los 10 Pokémon con la mayor estadística de defensa.</p>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><strong>Top 10 en defensa</strong>: Usar <code>nlargest</code> para obtener los Pokémon con mayor defensa.</li>
-<li><strong>Mostrar tabla</strong>: Mostrar una tabla con los resultados.</li>
-</ol>
-<div id="qpyodide-insertion-location-8"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<section id="condiciones-de-uso-de-giftcards" class="level3">
+<h3 class="anchored" data-anchor-id="condiciones-de-uso-de-giftcards">Condiciones de uso de giftcards</h3>
+<p>Las condiciones de uso de las giftcards para uso en el local <a href="https://cafe-robots-y-galletas.odoo.com/">café-robots-galletas</a> tienen las siguientes condiciones:</p>
+<ul>
+<li>Cada giftcard es válida para un único uso.</li>
+<li>La giftcard no se puede cambiar por dinero en efectivo, ni se entregará vuelto.</li>
+<li>La giftcard se puede usar para cualquier producto en venta en el local.</li>
+<li>Cada giftcard tiene vigencia de 3 meses (hasta el 31 de octubre).</li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1203,13 +1043,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
-      <a href="../../material/talleres/taller_2.html" class="pagination-link" aria-label="Python en Ciencia">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Python en Ciencia</span></span>
+      <a href="../../material/talleres/taller_3.html" class="pagination-link" aria-label="Python en Ciencia de Datos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Python en Ciencia de Datos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../material/anexos/cierre_evento.html" class="pagination-link" aria-label="Cierre PySchool">
-        <span class="nav-page-text"><span class="chapter-title">Cierre PySchool</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../material/anexos/aprendizaje.html" class="pagination-link" aria-label="Seguir aprendiendo">
+        <span class="nav-page-text"><span class="chapter-title">Seguir aprendiendo</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

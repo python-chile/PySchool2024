@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "🐍 PySchool",
     "section": "",
-    "text": "🏠 Home\nEste espacio ha sido creado con el objetivo de motivar a los estudiantes a conocer y aprender el lenguaje de programación Python. Dentro de este repositorio, encontrarás ejemplos autocontenidos que te ayudarán a entender y practicar los conceptos fundamentales de Python.\nPySchool es una iniciativa de la organización Python Chile y DUOC. Nuestro objetivo es proporcionar a la comunidad los recursos necesarios para aprender y mejorar sus habilidades en Python.\nLa PySchool tendrá lugar el viernes 2 de Agosto, en DUOC Sede Valparaíso, para alumnos invitados de distintos colegios de la V Región. Sin embargo, el material está disponible en línea para que cualquier interesado pueda participar.",
+    "text": "🏠 Home\nEste espacio ha sido creado con el objetivo de motivar a los estudiantes a conocer y aprender el lenguaje de programación Python. Dentro de este repositorio, encontrarás ejemplos autocontenidos que te ayudarán a entender y practicar los conceptos fundamentales de Python.\nPySchool es una iniciativa de la organización Python Chile y DUOC. Nuestro objetivo es proporcionar a la comunidad los recursos necesarios para aprender y mejorar sus habilidades en Python.\nLa PySchool tendrá lugar el Viernes 02 de Agosto, en DUOC Sede Valparaíso, para alumnos invitados de distintos colegios de la V Región. Sin embargo, el material está disponible en línea para que cualquier interesado pueda participar.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
     ]
@@ -14,7 +14,7 @@
     "href": "index.html#cronograma",
     "title": "🐍 PySchool",
     "section": "📅 Cronograma",
-    "text": "📅 Cronograma\n\n\n\n\n\n\n\n\n\nPrograma de actividades\n\n\nHorario de eventos del día\n\n\n\n\nInicio\nTérmino\nActividad\n\n\n\n\n9:00\n9:30\nAcreditación\n\n\n9:30\n10:15\nBienvenida y panel pythonistas\n\n\n10:30\n11:30\nTaller 1\n\n\n12:00\n13:00\nTaller 2\n\n\n13:00\n1:30\nCierre\n\n\n\n\n\n\n        \n\n\n\n\nTaller 1: Común para todos los participantes: Introducción a Python.\nTaller 2: Opcional, según la elección de cada participante:\n\nPython en Ciencias\nPython en Ciencia de Datos",
+    "text": "📅 Cronograma\n\n\n\n\n\n\n\n\n\nPrograma de actividades\n\n\nHorario de eventos del día\n\n\n\n\nInicio\nTérmino\nActividad\n\n\n\n\n9:00\n9:30\nAcreditación\n\n\n9:30\n10:15\nBienvenida y panel pythonistas\n\n\n10:30\n11:30\nTaller 1\n\n\n12:00\n13:00\nTaller 2\n\n\n13:00\n13:30\nCierre\n\n\n\n\n\n\n        \n\n\n\n\nTaller 1: Común para todos los participantes: Introducción a Python.\nTaller 2: Opcional, según la elección de cada participante: Python en Ciencias o Python en Ciencia de Datos.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
     ]
@@ -101,7 +101,7 @@
     "href": "material/talleres/taller_1.html#conversión-de-temperatura",
     "title": "Introducción a Python",
     "section": "🌡️ Conversión de Temperatura",
-    "text": "🌡️ Conversión de Temperatura\nUn programa para convertir grados Celsius a Fahrenheit. Este ejercicio es ideal para practicar operaciones matemáticas básicas y el uso de funciones en Python.\n\nContexto\nLa conversión de temperatura es una operación común en muchos campos científicos, desde la meteorología hasta la física y la química. Conocer cómo convertir entre diferentes unidades de temperatura es esencial en muchas aplicaciones. En este ejercicio, utilizaremos la fórmula de conversión para transformar una temperatura dada en grados Celsius a su equivalente en grados Fahrenheit.\n\n\nFórmula de Conversión\nLa fórmula para convertir grados Celsius a Fahrenheit es:\n\\[ \\text{Fahrenheit} = \\left( \\text{Celsius} \\times \\frac{9}{5} \\right) + 32 \\]\n\n\nObjetivos del Ejercicio\n\n\n\n\n\n\nDesafío:\n\n\n\n\n\nEl objetivo de este ejercicio es escribir una función en Python que convierta grados Celsius a Fahrenheit y pruebe la función con un ejemplo.\n\n\n\n\nDefinir una función: Crearemos una función llamada celsius_a_fahrenheit que tome un parámetro: la temperatura en grados Celsius (celsius).\nImplementar la conversión: Usaremos la fórmula de conversión para calcular la temperatura en grados Fahrenheit.\nProbar la función: Probaremos la función con un valor de ejemplo y mostraremos el resultado.\n\n\n\nCódigo para Conversión de Temperatura\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nExplicación del Código\n\nParámetro de Entrada:\n\ncelsius: Un número que representa la temperatura en grados Celsius.\n\nFórmula de Conversión:\n\nLa función utiliza la fórmula ((celsius ) + 32) para convertir la temperatura a grados Fahrenheit y devuelve el resultado.\n\n\n\n\nEjemplo de Uso\nEl código de ejemplo muestra cómo usar la función celsius_a_fahrenheit con un valor de temperatura de ejemplo (25 grados Celsius). Al ejecutar este ejemplo, se imprimirá 25 grados Celsius son 77.0 grados Fahrenheit.\n\n\nPrueba y Modificación\nLos estudiantes pueden modificar los valores de celsius para probar diferentes temperaturas y explorar cómo funciona la función. Por ejemplo:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEstos ejemplos permiten a los estudiantes ver cómo la función convierte distintas temperaturas en grados Celsius a su equivalente en grados Fahrenheit, reforzando su comprensión de la conversión de unidades y el uso de funciones en Python.",
+    "text": "🌡️ Conversión de Temperatura\nUn programa para convertir grados Celsius a Fahrenheit. Este ejercicio es ideal para practicar operaciones matemáticas básicas y el uso de funciones en Python.\n\nContexto\nLa conversión de temperatura es una operación común en muchos campos científicos, desde la meteorología hasta la física y la química. Conocer cómo convertir entre diferentes unidades de temperatura es esencial en muchas aplicaciones. En este ejercicio, utilizaremos la fórmula de conversión para transformar una temperatura dada en grados Celsius a su equivalente en grados Fahrenheit.\n\n\nFórmula de Conversión\nLa fórmula para convertir grados Celsius a Fahrenheit es:\n\\[ \\text{Fahrenheit} = \\left( \\text{Celsius} \\times \\frac{9}{5} \\right) + 32 \\]\n\n\nObjetivos del Ejercicio\n\n\n\n\n\n\nDesafío:\n\n\n\n\n\nEl objetivo de este ejercicio es escribir una función en Python que convierta grados Celsius a Fahrenheit y pruebe la función con un ejemplo.\n\n\n\n\nDefinir una función: Crearemos una función llamada celsius_a_fahrenheit que tome un parámetro: la temperatura en grados Celsius (celsius).\nImplementar la conversión: Usaremos la fórmula de conversión para calcular la temperatura en grados Fahrenheit.\nProbar la función: Probaremos la función con un valor de ejemplo y mostraremos el resultado.\n\n\n\nCódigo para Conversión de Temperatura\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nExplicación del Código\n\nParámetro de Entrada:\n\ncelsius: Un número que representa la temperatura en grados Celsius.\n\nFórmula de Conversión:\n\nLa función utiliza la fórmula \\((celsius \\times \\frac{9}{5}) + 32\\) para convertir la temperatura a grados Fahrenheit y devuelve el resultado.\n\n\n\n\nEjemplo de Uso\nEl código de ejemplo muestra cómo usar la función celsius_a_fahrenheit con un valor de temperatura de ejemplo (25 grados Celsius). Al ejecutar este ejemplo, se imprimirá 25 grados Celsius son 77.0 grados Fahrenheit.\n\n\nPrueba y Modificación\nLos estudiantes pueden modificar los valores de celsius para probar diferentes temperaturas y explorar cómo funciona la función. Por ejemplo:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEstos ejemplos permiten a los estudiantes ver cómo la función convierte distintas temperaturas en grados Celsius a su equivalente en grados Fahrenheit, reforzando su comprensión de la conversión de unidades y el uso de funciones en Python.",
     "crumbs": [
       "🚀 Talleres",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introducción a Python</span>"
@@ -112,7 +112,7 @@
     "href": "material/talleres/taller_1.html#cálculo-del-índice-de-masa-corporal-imc",
     "title": "Introducción a Python",
     "section": "🏋️‍♂️ Cálculo del Índice de Masa Corporal (IMC)",
-    "text": "🏋️‍♂️ Cálculo del Índice de Masa Corporal (IMC)\nUn programa para calcular el IMC de una persona. Este ejercicio es útil para practicar operaciones matemáticas y el uso de funciones en Python.\n\nContexto\nEl Índice de Masa Corporal (IMC) es una medida de la grasa corporal basada en la altura y el peso de una persona. La fórmula para calcular el IMC es:\n\\[ \\text{IMC} = \\frac{\\text{peso}}{\\text{altura}^2} \\]\n\n\nObjetivos del Ejercicio\n\n\n\n\n\n\nDesafío:\n\n\n\n\n\nEl objetivo de este ejercicio es escribir una función en Python que calcule el IMC de una persona y pruebe la función con un ejemplo.\n\n\n\n\nDefinir una función: Crearemos una función llamada calcular_imc que tome dos parámetros: el peso (peso) y la altura (altura).\nImplementar el cálculo: Usaremos la fórmula del IMC para calcular el índice y devolver el resultado.\nProbar la función: Probaremos la función con valores de ejemplo y mostraremos el resultado.\n\n\n\nCódigo para el Cálculo del IMC\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nExplicación del Código\n\nParámetros de Entrada:\n\npeso: Un número que representa el peso de la persona en kilogramos.\naltura: Un número que representa la altura de la persona en metros.\n\nFórmula del IMC:\n\nLa función utiliza la fórmula () para calcular el IMC y devuelve el resultado.\n\n\n\n\nEjemplo de Uso\nEl código de ejemplo muestra cómo usar la función calcular_imc con valores de ejemplo (70 kg de peso y 1.75 m de altura). Al ejecutar este ejemplo, se imprimirá Para un peso de 70 kg y una altura de 1.75 m, el IMC es 22.86.\n\n\nPrueba y Modificación\nLos estudiantes pueden modificar los valores de peso y altura para probar diferentes combinaciones y explorar cómo funciona la función. Por ejemplo:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEstos ejemplos permiten a los estudiantes ver cómo la función calcula el IMC para diferentes pesos y alturas, reforzando su comprensión de las operaciones matemáticas y el uso de funciones en Python.",
+    "text": "🏋️‍♂️ Cálculo del Índice de Masa Corporal (IMC)\nUn programa para calcular el IMC de una persona. Este ejercicio es útil para practicar operaciones matemáticas y el uso de funciones en Python.\n\nContexto\nEl Índice de Masa Corporal (IMC) es una medida de la grasa corporal basada en la altura y el peso de una persona. La fórmula para calcular el IMC es:\n\\[ \\text{IMC} = \\frac{\\text{peso}}{\\text{altura}^2} \\]\n\n\nObjetivos del Ejercicio\n\n\n\n\n\n\nDesafío:\n\n\n\n\n\nEl objetivo de este ejercicio es escribir una función en Python que calcule el IMC de una persona y pruebe la función con un ejemplo.\n\n\n\n\nDefinir una función: Crearemos una función llamada calcular_imc que tome dos parámetros: el peso (peso) y la altura (altura).\nImplementar el cálculo: Usaremos la fórmula del IMC para calcular el índice y devolver el resultado.\nProbar la función: Probaremos la función con valores de ejemplo y mostraremos el resultado.\n\n\n\nCódigo para el Cálculo del IMC\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nExplicación del Código\n\nParámetros de Entrada:\n\npeso: Un número que representa el peso de la persona en kilogramos.\naltura: Un número que representa la altura de la persona en metros.\n\nFórmula del IMC:\n\nLa función utiliza la fórmula \\(\\frac{peso}{altura^2}\\) para calcular el IMC y devuelve el resultado.\n\n\n\n\nEjemplo de Uso\nEl código de ejemplo muestra cómo usar la función calcular_imc con valores de ejemplo (70 kg de peso y 1.75 m de altura). Al ejecutar este ejemplo, se imprimirá Para un peso de 70 kg y una altura de 1.75 m, el IMC es 22.86.\n\n\nPrueba y Modificación\nLos estudiantes pueden modificar los valores de peso y altura para probar diferentes combinaciones y explorar cómo funciona la función. Por ejemplo:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEstos ejemplos permiten a los estudiantes ver cómo la función calcula el IMC para diferentes pesos y alturas, reforzando su comprensión de las operaciones matemáticas y el uso de funciones en Python.",
     "crumbs": [
       "🚀 Talleres",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introducción a Python</span>"
@@ -262,6 +262,17 @@
     ]
   },
   {
+    "objectID": "material/anexos/cierre_evento.html",
+    "href": "material/anexos/cierre_evento.html",
+    "title": "Cierre PySchool",
+    "section": "",
+    "text": "🎯 Retroalimentación\nNos encantaría saber que te ha parecido PySchool, y que podemos mejorar. Agradeceríamos contestaras la siguiente encuesta:\n\n \n\nhttps://forms.gle/MjQFihE1RiKzVgid9\n\n\n\n\n\nCódigo para sorteo\nPara sortear algunos premios utilizaremos, por supuesto, un código de python. Usaremos la función random.randint(a, b) que retorna un número entero aleatorio \\(N\\) que cumpla la condición \\(a &lt;= N &lt;= b\\).\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nCondiciones de uso de giftcards\nLas condiciones de uso de las giftcards para uso en el local café-robots-galletas tienen las siguientes condiciones:\n\nCada giftcard es válida para un único uso.\nLa giftcard no se puede cambiar por dinero en efectivo, ni se entregará vuelto.\nLa giftcard se puede usar para cualquier producto en venta en el local.\nCada giftcard tiene vigencia de 3 meses (hasta el 31 de octubre).",
+    "crumbs": [
+      "📜 Anexos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cierre PySchool</span>"
+    ]
+  },
+  {
     "objectID": "material/anexos/aprendizaje.html",
     "href": "material/anexos/aprendizaje.html",
     "title": "Seguir aprendiendo",
@@ -269,7 +280,7 @@
     "text": "Recursos recomendados 📚",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Seguir aprendiendo</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Seguir aprendiendo</span>"
     ]
   },
   {
@@ -280,7 +291,7 @@
     "text": "Cursos en Línea\n\nCoursera: Cursos como “Python for Everybody” de la Universidad de Míchigan.\nedX: Programas de certificación profesional como “Programming for Everybody” del MIT.\nUdemy: Cursos completos, desde lo básico hasta temas avanzados como “Complete Python Bootcamp”.\n\nPlataformas Interactivas\n\nCodecademy: Curso interactivo de Python para principiantes.\nDataCamp: Cursos especializados en Python para ciencia de datos.\n\nDocumentación Oficial y Recursos Comunitarios\n\nDocumentación de Python: La fuente más confiable y detallada para aprender Python.\nStack Overflow: Comunidad activa para resolver dudas.\nGitHub: Repositorios de proyectos de código abierto en Python.\n\nLibros Recomendados\n\n“Automate the Boring Stuff with Python” de Al Sweigart.\n“Python Crash Course” de Eric Matthes.\n“Fluent Python” de Luciano Ramalho.",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Seguir aprendiendo</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Seguir aprendiendo</span>"
     ]
   },
   {
@@ -291,7 +302,7 @@
     "text": "Consejos para Aprender Python\n\nPracticar regularmente\n\nEscribe código todos los días, incluso si es por poco tiempo.\n\nParticipar en proyectos reales\n\nContribuye a proyectos de código abierto en GitHub o crea tus propios proyectos.\n\nResolver ejercicios y retos\n\nPlataformas como LeetCode, HackerRank, y CodeWars ofrecen retos de programación.\n\nUnirse a comunidades\n\nParticipa en comunidades como r/learnpython en Reddit y Python Discord.\n\nMantenerse Actualizado\n\nSigue aprendiendo sobre nuevas versiones y mejores prácticas a través de blogs, conferencias y webinars.\n\n\nCon estos recursos y consejos, estarás en el camino correcto para dominar Python y aplicarlo en tus proyectos y carrera profesional.",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Seguir aprendiendo</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Seguir aprendiendo</span>"
     ]
   },
   {
@@ -302,7 +313,7 @@
     "text": "Esta página fue creada con quarto y la extensión quarto-pyodide\n\n\n\nFiltro quarto-pyodide en acción\n\n\nPuedes ver el ejemplo completo de la extensión en acción aquí.",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sobre la página</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sobre la página</span>"
     ]
   },
   {
@@ -310,10 +321,10 @@
     "href": "material/anexos/autoria.html",
     "title": "Autoría",
     "section": "",
-    "text": "Reconocimientos Adicionales\nAdemás, queremos reconocer a todos los colaboradores y miembros de la comunidad que han contribuido con ideas, sugerencias y código, ayudando a mejorar y expandir este proyecto. Su participación es invaluable y profundamente apreciada.\nSi deseas conocer más sobre los autores y colaboradores, o cómo puedes contribuir tú también, visita la página oficial de Python Chile. ¡Gracias por apoyar y ser parte de nuestra comunidad!",
+    "text": "Reconocimientos adicionales\nQueremos extender un agradecimiento especial a todos los colaboradores y miembros de nuestra comunidad que han enriquecido este proyecto con sus ideas, sugerencias y aportes de código. Su participación ha sido crucial y es enormemente valorada.\nPara obtener más información sobre los autores y colaboradores, o para descubrir cómo puedes contribuir, te invitamos a visitar la página oficial de Python Chile. ¡Agradecemos tu apoyo y nos complace contar contigo en nuestra comunidad!",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Autoría</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Autoría</span>"
     ]
   },
   {
@@ -324,7 +335,7 @@
     "text": "Cómo Contribuir",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Colaborar</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Colaborar</span>"
     ]
   },
   {
@@ -335,7 +346,7 @@
     "text": "Reportar Problemas\nSi encuentras errores, repórtalos creando un “issue” en nuestro repositorio de GitHub.\n\n\nProponer Mejoras\nPropon ideas creando un “issue” o enviando un “pull request” con tus sugerencias.\n\n\nContribuir con Código\n\nFork el repositorio: Crea una copia en tu cuenta de GitHub.\nClona tu fork:\ngit clone https://github.com/tu_usuario/pyschool_content.git\nCrea una rama:\ngit checkout -b mi_contribucion\nHaz tus cambios.\nCommit tus cambios:\ngit commit -m \"Descripción de mi contribución\"\nPush a tu fork:\ngit push origin mi_contribucion\nCrea un Pull Request: Describe tus cambios.\n\n\n\nDocumentación\nMejora la documentación siguiendo los mismos pasos.\n\n\nRevisión de Código\nAyuda revisando “pull requests” y proporcionando feedback constructivo.",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Colaborar</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Colaborar</span>"
     ]
   },
   {
@@ -346,7 +357,7 @@
     "text": "Código de Conducta\nMantén un ambiente respetuoso. Lee nuestro Código de Conducta antes de contribuir.",
     "crumbs": [
       "📜 Anexos",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Colaborar</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Colaborar</span>"
     ]
   }
 ]
