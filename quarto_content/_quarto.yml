@@ -7,7 +7,7 @@ book:
   author: "Python Chile"
   date: "08/02/2024"
   favicon: "images/pc.png"
-  repo-url: "https://github.com/fralfaro/pyschool_content"
+  repo-url: "https://github.com/python-chile/PySchool2024"
 
   chapters:
     - index.qmd
@@ -19,6 +19,7 @@ book:
         - material/talleres/taller_3.qmd
     - part: 📜 Anexos
       chapters:
+        - material/anexos/cierre_evento.qmd
         - material/anexos/aprendizaje.qmd
         - material/anexos/tecnologia.qmd
         - material/anexos/autoria.qmd
