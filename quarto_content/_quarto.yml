@@ -34,9 +34,6 @@ format:
     number-sections: false
     toc: false
     page-layout: full
-  epub:
-    cover-image: images/cover.png
-
 
 filters: 
   - pyodide
