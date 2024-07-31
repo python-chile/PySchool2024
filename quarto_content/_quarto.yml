@@ -1,0 +1,43 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "🐍 PySchool"
+  author: "Python Chile"
+  date: "08/02/2024"
+  favicon: "images/pc.png"
+  repo-url: "https://github.com/fralfaro/pyschool_content"
+
+  chapters:
+    - index.qmd
+    - part: 🚀 Talleres
+      chapters:
+        - material/talleres/intro.qmd
+        - material/talleres/taller_1.qmd
+        - material/talleres/taller_2.qmd
+        - material/talleres/taller_3.qmd
+    - part: 📜 Anexos
+      chapters:
+        - material/anexos/aprendizaje.qmd
+        - material/anexos/tecnologia.qmd
+        - material/anexos/autoria.qmd
+        - material/anexos/colaborar.qmd
+index:
+  qmd:
+lang: es
+
+format:
+  html:
+    theme: flatly
+    number-sections: false
+    toc: false
+    page-layout: full
+  epub:
+    cover-image: images/cover.png
+
+
+filters: 
+  - pyodide
+
+sin-enumeracion: true  # Esta línea es opcional para indicar que no se desea enumeración
