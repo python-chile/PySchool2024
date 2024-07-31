@@ -14,7 +14,7 @@ PySchool es una iniciativa de la organización Python Chile y DUOC. Nuestro obje
 <a href="https://cafe-robots-y-galletas.odoo.com/" target="_blank" rel="noopener noreferrer"><img src="./images/cafe_robots_galletas.png" width="270"></a>
 </center>
 
-La PySchool tendrá lugar el Viernes 02 de Agosto, en DUOC Sede Valparaíso, para alumnos invitados de distintos colegios de la V Región. Sin embargo, el material está disponible en línea para que cualquier interesado pueda participar.
+La PySchool tendrá lugar el Viernes 02 de agosto, en DUOC Sede Valparaíso, para alumnos invitados de distintos colegios de la V Región. Sin embargo, el material está disponible en línea para que cualquier interesado pueda participar.
 
 ## 📅 Cronograma
 
